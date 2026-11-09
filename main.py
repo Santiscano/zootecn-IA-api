@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from zootecn_ia_api.api.auth.auth_router import user_router
+from zootecn_ia_api.api.auth.auth_router import router as user_router
 from zootecn_ia_api.core.config import CORS_ORIGINS, ENVIRONMENT
 from zootecn_ia_api.core.database import Base, SessionLocal, engine
 from zootecn_ia_api.seed.seed_service import load_seeds
